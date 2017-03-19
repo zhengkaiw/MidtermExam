@@ -73,8 +73,8 @@ public class Midterm {
 
     }
 
-    //4
-    public static int[] twoSum(int[] nums, int target) {
+    // 4
+    /*public static int[] twoSum(int[] nums, int target) {
 
         //write your code here
         int[] result = new int[2];
@@ -89,6 +89,27 @@ public class Midterm {
         }
 
         return result;
+    }*/
+
+    // 4 with Hashmap
+    public static int[] twoSum(int[] nums, int target) {
+
+        //write your code here
+        HashMap<Integer, Integer> h = new HashMap<>();
+        int[] result = new int[2];
+
+        for (int i = 0; i < nums.length; i++) {
+            h.put(nums[i], i);
+        }
+
+        for (int i : h.keySet()) {
+            if (h.containsKey(target - i)) {
+                result[0] = h.get(target - i);
+                result[1] = h.get(i);
+            }
+        }
+        return result;
+
     }
 
     //extra credit
