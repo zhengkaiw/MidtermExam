@@ -6,7 +6,7 @@ import java.util.*;
 public class Midterm {
 
     // 1
-    public static void reverse(ArrayList<Integer> list) {
+    public static void reverse(ArrayList<Integer> list) {       //correct
 
         //write your code here
         for (int i = list.size() - 1; i > -1; i--) {
@@ -18,7 +18,7 @@ public class Midterm {
     }
 
     // 2
-    public static String generateStrings(String s1, String s2) {
+    public static String generateStrings(String s1, String s2) {      //correct
 
         //write your code here
         ArrayList<Character> a1 = new ArrayList<Character>();
@@ -50,7 +50,7 @@ public class Midterm {
     }
 
     // 3
-    public static int singleNumber(int[] nums) {
+    public static int singleNumber(int[] nums) {     //correct
 
         //write your code here
         for (int i = 0; i < nums.length - 1; i++) {
@@ -92,7 +92,7 @@ public class Midterm {
     }*/
 
     // 4 with Hashmap
-    public static int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {      //correct
 
         //write your code here
         HashMap<Integer, Integer> h = new HashMap<>();
@@ -113,7 +113,7 @@ public class Midterm {
     }
 
     //extra credit
-    public static List<Integer> getRow(int rowIndex) {
+    public static List<Integer> getRow(int rowIndex) {       //correct
 
         //write your code here
         ArrayList<Integer> l = new ArrayList<Integer>();
